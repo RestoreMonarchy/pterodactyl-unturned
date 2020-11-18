@@ -12,6 +12,7 @@ if [ "${OPENMOD_AUTOUPDATE}" == "1" ]; then
 	unzip -o -q OpenMod.Unturned.Module*.zip -d Modules && rm OpenMod.Unturned.Module*.zip
 fi
 
+mkdir -p Unturned_Headless_Data/Plugins/x86_64
 cp -f steam/linux64/steamclient.so Unturned_Headless_Data/Plugins/x86_64/steamclient.so
 
 ulimit -n 2048

@@ -8,7 +8,7 @@
     "author": "michaelcrow@restoremonarchy.com",
     "description": "Unturned dedicated server with OpenMod.",
     "image": "michaelcrow\/pterodactyl-unturned-openmod:latest",
-    "startup": ".\/Unturned_Headless.x86_64 -batchmode -nographics -ThreadedConsole -port {{SERVER_PORT}} -maxplayers {{MAX_PLAYERS}} +secureserver\/unturned",
+    "startup": ".\/ServerHelper.sh +InternetServer -ThreadedConsole -port {{SERVER_PORT}} -maxplayers {{MAX_PLAYERS}} +secureserver\/unturned",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"Loading level: 100%\",\r\n    \"userInteraction\": []\r\n}",
